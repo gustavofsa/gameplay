@@ -9,7 +9,7 @@ type AvatarProps = {
   imageUrl: string;
 }
 
-export default function Avatar({imageUrl}: AvatarProps) {
+export function Avatar({imageUrl}: AvatarProps) {
   const {secondary50, secondary70} = theme.colors;
 
   return (
