@@ -14,7 +14,10 @@ export function Guilds({ handleGuildSelect }: GuildsProps) {
   const guilds = [
     {id: '1', name: 'Lendários', icon: 'image', owner: true},
     {id: '2', name: 'Los Ninjas', icon: 'image', owner: true},
-    {id: '3', name: 'Jogatina', icon: 'image', owner: true}
+    {id: '3', name: 'Jogatina', icon: 'image', owner: true},
+    {id: '4', name: 'Gameplay de qualidade', icon: 'image', owner: true},
+    {id: '5', name: '4fun da rapaziada', icon: 'image', owner: true},
+    {id: '6', name: 'SOULSLIKE NAQUELE PIQUE', icon: 'image', owner: true}
   ];
 
   return (
@@ -29,7 +32,9 @@ export function Guilds({ handleGuildSelect }: GuildsProps) {
           />
         )}
         showsVerticalScrollIndicator={false}
-        ItemSeparatorComponent={ListDivider}
+        ItemSeparatorComponent={() => <ListDivider isCentered />}
+        ListHeaderComponent={<ListDivider isCentered />}
+        contentContainerStyle={{ paddingBottom: 68, paddingTop: 103 }}
         style={styles.guilds}
       />
     </View>
