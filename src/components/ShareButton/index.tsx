@@ -1,12 +1,13 @@
 import React from 'react'
-import { BorderlessButton } from 'react-native-gesture-handler'
+import { BorderlessButton, BorderlessButtonProps } from 'react-native-gesture-handler'
 import { Fontisto } from '@expo/vector-icons';
 
 import { theme } from '../../global/styles/theme';
 
-export function ShareButton() {
+
+export function ShareButton({...rest}: BorderlessButtonProps) {
   return (
-    <BorderlessButton>
+    <BorderlessButton {...rest}>
       <Fontisto
         name="share"
         size={24}
