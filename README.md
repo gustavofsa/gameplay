@@ -42,8 +42,6 @@ Aplicativo mobile para que jogadores se conectem e organizem suas gameplays. Age
 
 ## 🤔 Como rodar
 
-<br/>
-
 ### **Pré-requisitos**
 
 - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado na máquina
